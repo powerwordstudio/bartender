@@ -1,0 +1,35 @@
+{
+  "name": "bartender",
+  "version": "1.0.0",
+  "description": "A bot for The Trusted Frame.",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "github:powerwordstudio/bartender",
+  "bugs": "https://github.com/powerwordstudio/bartender/issues",
+  "keywords": [
+    "discord",
+    "fallout-76",
+    "fallout76",
+    "roleplay"
+  ],
+  "author": "Laura T Szivos (http://powerwordstudio.com)",
+  "contributors": [
+    "Name <email@email.com> (https://website.com)"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "discord.js-commando": "^0.10.0",
+    "module-alias": "^2.2.2"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@util": "./util",
+    "@features": "./features/features",
+    "@commands": "./commands/command"
+  }
+}
