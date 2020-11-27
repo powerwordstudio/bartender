@@ -1,6 +1,6 @@
 {
   "name": "bartender",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A bot for The Trusted Frame.",
   "private": true,
   "main": "index.js",
@@ -8,7 +8,7 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "github:powerwordstudio/bartender",
+  "repository": "https://github.com/powerwordstudio/bartender.git/",
   "bugs": "https://github.com/powerwordstudio/bartender/issues",
   "keywords": [
     "discord",
