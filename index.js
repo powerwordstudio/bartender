@@ -1,14 +1,15 @@
 require("module-alias/register")
 
 const path = require("path")
-const Commando = require("discord.js-commando")
+const commando = require("discord.js-commando")
 
 const config = require("@root/config.json")
 const loadFeatures = require('@root/features/load-features')
 
-const client = new Commando.CommandoClient({
+const client = new commando.CommandoClient({
   owner: "751169133625868438",
-  commandPrefix: config.prefix
+  commandPrefix: config.prefix,
+  disableEveryone: true
 })
 
 client.on("ready", async () => {
@@ -16,7 +17,7 @@ client.on("ready", async () => {
 
   client.registry
     .registerDefaults()
-    .registerCommandsIn(path.join(__dirname, "cmds"))
+    .registerCommandsIn(path.join(__dirname, "commands"))
 
   loadFeatures(client)
 })
